@@ -15,7 +15,7 @@ function Task(id, description, urgent = false, priv = true, deadline) {
     this.urgent = urgent;
     this.priv = priv;
     
-    this.deadline = (deadline === undefined) ? undefined : dayjs(deadline);
+    this.deadline = (deadline == undefined) ? undefined : dayjs(deadline);
   
     this.toString = () => {
       return `Id: ${this.id}, 
